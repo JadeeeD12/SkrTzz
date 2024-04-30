@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device=width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <title> Skkrtz</title>
+    </head>
+    <style>
+        h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
+    </style>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></li>
+                <li><a href="#" class="button"id="button">Sign Up</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="s">About</a></li>
+                <li><a href="s">More</a></li>
+            </ul>
+            <ul>
+                <li><img src="2logo.png"> </li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="s">About</a></li>
+                <li><a href="s">More</a></li>
+                <li><img src="1logo.png"></li>
+                <li><input type="text" placeholder="Search.."></li>
+                <li onclick=showSidebar()><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="45px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg></li>
+            </ul>
+        </nav>
+    <div class="content">
+            <h1>Reliable, Fast, and <br>Efficient</h1>
+            <p>We have what You need to fix your Problems</p>
+            <p1> Diagnose your car and find car parts in High Quality only at SkrTzz.com</p1>
+        </div>  
+    </div>
+    <div class="footbar">
+                <p>© Jade David Geraldo ©</p>
+    </div>
+
+
+<div class="Signup">
+    <div class="sign">
+        <ul>
+            <li>Send Your Details<img src="1logo.png" alt="logo"></li>
+            <li><a href="store.html"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></li></a>
+        </ul>
+
+        <div class="container">
+            <form target="_blank" action="https://formsubmit.co/20171164@s.ubaguio.edu" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    <input type="text" name="Order" class="form-control" placeholder="Item Name (quantity)" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="Address" class="form-control" placeholder="Address" required>
+              </div>
+              <input type="hidden" name="_captcha" value="false">
+
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Place order</button>
+            </form>
+          </div>
+
+    </div>
+</div>
+
+
+
+
+
+        <script>
+            function showSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+    </body>  
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<style></style>
+<div id="home" class="Home">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width-device=width,initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="Homepage.css">
+            <script src="script.js" defer></script>
+            <title> Skrtzz.com</title>
+
+
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></li>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Homepage.html">About</a></li>
+                    <li><a href="Homepage.html">Contacts</a></li>
+                </ul>
+                <ul>
+                    <li><img src="2logo.png"> </li>
+                    <li></li>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Homepage.html">About</a></li>
+                    <li><a href="Homepage.html">Contacts</a></li>
+                    <li><img src="1logo.png"></li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Search Bar</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                              <a href="#item1">Brake Pads</a>
+                              <a href="#item2">Brake Discs</a>
+                              <a href="#item3">Oil Filters</a>
+                              <a href="#item4">Air Filters</a>
+                              <a href="#item5">Spark Plugs</a>
+                              <a href="#item6">Engine Oil</a>
+                              <a href="#item7">Headlights</a>
+                              <a href="#item8">Tail Lights</a>
+                              <a href="#item9">Radiator</a>
+                              <a href="#item10">Radiator Hoses</a>
+                              <a href="#item11">Timing Belts</a>
+                              <a href="#item12">Serpentine Belts</a>
+                              <a href="#item13">Water Pump</a>
+                              <a href="#item14">Fuel Pump</a>
+                              <a href="#item15">Oxygen Sensors</a>
+                              <a href="#item16">Suspensions</a>
+                              <a href="#item17">Alternator</a>
+                              <a href="#item18">Starter Motor</a>
+                              <a href="#item19">Ignition Coils</a>
+                              <a href="#item20">Exhaust</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li onclick=showSidebar()><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="45px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg></li>
+                </ul>
+                <script>
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        function filterFunction() {
+                            var input, filter, ul, li, a, i;
+                            input = document.getElementById("myInput");
+                            filter = input.value.toUpperCase();
+                            div = document.getElementById("myDropdown");
+                            a = div.getElementsByTagName("a");
+                            for (i = 0; i < a.length; i++) {
+                            txtValue = a[i].textContent || a[i].innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                a[i].style.display = "";
+                            } else {
+                                a[i].style.display = "none";
+                            }
+                            }
+                        }
+                </script>
+            </nav>
+    </head>
+</div>
+<div id="main">
+<body>
+    <br><br><br><br><br><br>
+    <div class="print">
+        <center><h1>CHECK OUT OUR PRODUCTS!</h1></center>
+    </div>
+    <html>
+        <div   class="container">
+            <div class="products-container">
+                    <div id="item1">
+                        <div class="product" data-name="item1">
+                            <img src="images/item1.webp" alt="BrakePads">
+                            <h3>Brake Pads</h3>
+                            <div class="price">₱ 980.00</div>
+                         </div>
+                    </div>
+                    <div id="item2">
+                        <div class="product" data-name="item2">
+                            <img src="images/item2.png" alt="BrakeDiscs">
+                            <h3>Brake Discs</h3>
+                            <div class="price">₱ 11,000.00</div>
+                         </div>
+                    </div>
+                    <div id="item3">
+                        <div class="product" data-name="item3">
+                            <img src="images/item3.webp" alt="OilFilters">
+                            <h3>Oil Filters</h3>
+                            <div class="price">₱ 900.00</div>
+                         </div>
+                    </div>
+                    <div id="item4">
+                        <div class="product" data-name="item4">
+                            <img src="images/item4.webp" alt="Air">
+                            <h3>Air Filters</h3>
+                            <div class="price">₱ 450.00</div>
+                         </div>
+                    </div>
+                    <div id="item5">
+                        <div class="product" data-name="item5">
+                            <img src="images/item5.webp" alt="Spark">
+                            <h3>Spark Plugs</h3>
+                            <div class="price">₱ 280.00</div>
+                         </div>
+                    </div>
+                    <div id="item6">
+                        <div class="product" data-name="item6">
+                            <img src="images/item6.png" alt="Engine">
+                            <h3>Engine Oil</h3>
+                            <div class="price">₱ 2,300.00</div>
+                         </div>
+                    </div>
+                    <div id="item7">
+                        <div class="product" data-name="item7">
+                            <img src="images/item7.png" alt="Head">
+                            <h3>Headlights</h3>
+                            <div class="price">₱ 2,600.00</div>
+                         </div>
+                    </div>
+                    <div id="item8">
+                        <div class="product" data-name="item8">
+                            <img src="images/item8.png" alt="Tail">
+                            <h3>Tail Lights</h3>
+                            <div class="price">₱ 2,400.00</div>
+                         </div>
+                    </div>
+                    <div id="item9">
+                        <div class="product" data-name="item9">
+                            <img src="images/item9.png" alt="Radiator">
+                            <h3>Radiator</h3>
+                            <div class="price">₱ 2,800.00</div>
+                         </div>
+                    </div>
+                    <div id="item10">
+                        <div class="product" data-name="item10">
+                            <img src="images/item10.png" alt="radHose">
+                            <h3>Radiator Hoses</h3>
+                            <div class="price">₱ 300.00</div>
+                         </div>
+                    </div>
+                    <div id="item11">
+                        <div class="product" data-name="item11">
+                            <img src="images/item11.png" alt="Timing">
+                            <h3>Timing Belts</h3>
+                            <div class="price">₱ 1,900.00</div>
+                         </div>
+                    </div>
+                    <div id="item12">
+                        <div class="product" data-name="item12">
+                            <img src="images/item12.webp" alt="Serpentine">
+                            <h3>Serpentine Belts</h3>
+                            <div class="price">₱950.00</div>
+                         </div>
+                    </div>
+                    <div id="item13">
+                        <div class="product" data-name="item13">
+                            <img src="images/item13.webp" alt="Water">
+                            <h3>Water Pump</h3>
+                            <div class="price">₱ 5,999.00</div>
+                         </div>
+                    </div>
+                    <div id="item14">
+                        <div class="product" data-name="item14">
+                            <img src="images/item14.png" alt="Fuel">
+                            <h3>Fuel Pump</h3>
+                            <div class="price">₱ 9,000.00</div>
+                         </div>
+                    </div>
+                    <div id="item15">
+                        <div class="product" data-name="item15">
+                            <img src="images/item15.png" alt="Sensor">
+                            <h3>Oxygen Sensors</h3>
+                            <div class="price">₱ 999.00</div>
+                         </div>
+                    </div>
+                    <div id="item16">
+                        <div class="product" data-name="item16">
+                            <img src="images/item16.png" alt="Suspen">
+                            <h3>Suspensions</h3>
+                            <div class="price">₱ 2,999.00</div>
+                         </div>
+                    </div>
+                    <div id="item17">
+                        <div class="product" data-name="item17">
+                            <img src="images/item17.png" alt="Alter">
+                            <h3>Alternators</h3>
+                            <div class="price">₱ 6,999.00</div>
+                         </div>
+                    </div>
+                    <div id="item18">
+                        <div class="product" data-name="item18">
+                            <img src="images/item18.png" alt="motor">
+                            <h3>Starter Motor</h3>
+                            <div class="price">₱ 11,500.00</div>
+                         </div>
+                    </div>
+                    <div id="item19">
+                        <div class="product" data-name="item19">
+                            <img src="images/item19.png" alt="">
+                            <h3>Ignition Coils</h3>
+                            <div class="price">₱ 299.00</div>
+                         </div>
+                    </div>
+                    <div id="item20">
+                        <div class="product" data-name="item20">
+                            <img src="images/item20.png" alt="Ex">
+                            <h3>Exhaust</h3>
+                            <div class="price">₱ 1,200.00</div>
+                         </div>
+                    </div>
+            </div>
+            </div>
+            <div class="products-preview">
+                <div class="preview" data-target="item1">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item1.webp" alt="BrakePads">
+                   <h3>Brake Pads</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 23 Stock )</span>
+                   </div>
+                   <p>A thin block that presses onto the disk in a disk brake in order to make a vehicle go slower or stop.</p>
+                   <div class="price">₱ 980.00</div>
+                   <div class="buttons">
+                      <a href="signup.html" class="buy">Buy Now</a>
+                      <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item2">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item2.png" alt="BrakeDiscs">
+                   <h3>Brake Discs</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 3 Stock )</span>
+                   </div>
+                   <p>A metal discs that rotate with the wheels, where the brake pads clamp onto them to generate friction and stop the vehicle.</p>
+                   <div class="price">₱ 11,000.00</div>
+                   <div class="buttons">
+                    <a href="signup.html" class="buy">Buy Now</a>
+                    <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item3">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item3.webp" alt="OilFilters">
+                   <h3>Oil Filters</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 20 Stock )</span>
+                   </div>
+                   <p>Removes contaminants from engine oil to ensure proper lubrication and prevent damage to engine components.</p>
+                   <div class="price">₱ 900.00</div>
+                   <div class="buttons">
+                    <a href="signup.html" class="buy">Buy Now</a>
+                    <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item4">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item4.webp" alt="Air">
+                   <h3>Air Filters</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 17 Stock )</span>
+                   </div>
+                   <p>Removes dirt, dust, and other particles from the air entering the engine, ensuring clean air for combustion.</p>
+                   <div class="price">₱ 450.00</div>
+                   <div class="buttons">
+                    <a href="signup.html" class="buy">Buy Now</a>
+                    <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item5">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item5.webp" alt="Spark">
+                   <h3>Spark Plugs</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 15 Stock )</span>
+                   </div>
+                   <p>Ignites the air-fuel mixture in the engine cylinders, creating combustion necessary for engine operation.</p>
+                   <div class="price">₱ 280.00</div>
+                   <div class="buttons">
+                    <a href="signup.html" class="buy">Buy Now</a>
+                    <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item6">
+                   <i class="fas fa-times"></i>
+                   <img src="images/item6.png" alt="Engine">
+                   <h3>Engine Oil</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>( 5 Stock)</span>
+                   </div>
+                   <p>Lubricates engine components, reduces friction, and dissipates heat to keep the engine running smoothly.</p>
+                   <div class="price">₱ 2,300.00</div>
+                   <div class="buttons">
+                    <a href="signup.html" class="buy">Buy Now</a>
+                    <a href="store.html" class="cart">Back</a>
+                   </div>
+                </div>
+             
+                <div class="preview" data-target="item7">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item7.png" alt="Head">
+                    <h3>Headlights</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 5 Stock )</span>
+                    </div>
+                    <p>Illuminates the road ahead for visibility and safety during low-light conditions.</p>
+                    <div class="price">₱ 2,600.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item8">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item8.png" alt="Tail">
+                    <h3>Tail Lights</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 3 Stock )</span>
+                    </div>
+                    <p>Indicates the presence, position, and direction of a vehicle to other drivers on the road.</p>
+                    <div class="price">₱ 2,400.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item9">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item9.png" alt="Radiator">
+                    <h3>Radiator</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 6 Stock )</span>
+                    </div>
+                    <p>Cools the engine by transferring heat away from the coolant circulating through the engine.</p>
+                    <div class="price">₱ 2,800.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item10">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item10.png" alt="radHose">
+                    <h3>Radiator Hoses</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 15 Stock )</span>
+                    </div>
+                    <p>Transports coolant between the engine and the radiator to regulate engine temperature.</p>
+                    <div class="price">₱ 300.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item11">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item11.png" alt="Timing">
+                    <h3>Timing Belts</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 7 Stock )</span>
+                    </div>
+                    <p>Synchronizes the rotation of the engine's camshaft and crankshaft to ensure proper engine operation.</p>
+                    <div class="price">₱ 1,900.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item12">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item12.webp" alt="Serpentine">
+                    <h3>Serpentine Belts</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 19 Stock )</span>
+                    </div>
+                    <p>Powers various engine accessories such as the alternator, power steering pump, and air conditioning compressor.</p>
+                    <div class="price">₱ 950.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item13">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item13.webp" alt="Water">
+                    <h3>Water Pump</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 7 Stock )</span>
+                    </div>
+                    <p>Circulates coolant through the engine and radiator to maintain optimal engine temperature.</p>
+                    <div class="price">₱ 5,999.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item14">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item14.png" alt="Fuel">
+                    <h3>Fuel Pump</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 5 Stock )</span>
+                    </div>
+                    <p>Delivers fuel from the tank to the engine's fuel injectors or carburetor for combustion.</p>
+                    <div class="price">₱ 9,000.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item15">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item15.png" alt="Oxy">
+                    <h3>Oxygen Sensors</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 9 Stock )</span>
+                    </div>
+                    <p>Measures the amount of oxygen in the exhaust gases to help optimize fuel efficiency and reduce emissions.</p>
+                    <div class="price">₱ 999.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item16">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item16.png" alt="Suspen">
+                    <h3>Suspensions</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 11 Stock )</span>
+                    </div>
+                    <p>Absorbs shocks and vibrations from the road, providing a smooth and comfortable ride.</p>
+                    <div class="price">₱ 2,999.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item17">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item17.png" alt="Alter">
+                    <h3>Alternators</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 3 Stock )</span>
+                    </div>
+                    <p>Converts mechanical energy from the engine into electrical energy to power the vehicle's electrical systems and recharge the battery.</p>
+                    <div class="price">₱ 6,999.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item18">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item18.png" alt="Starter">
+                    <h3>Starter Motor</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 2 Stock )</span>
+                    </div>
+                    <p>Engages the engine flywheel to start the engine by cranking it until combustion begins.</p>
+                    <div class="price">₱ 11,500.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item19">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item19.png" alt="Ignition">
+                    <h3>Ignition Coils</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 10 Stock )</span>
+                    </div>
+                    <p> Converts low voltage from the battery into high voltage needed to ignite the fuel-air mixture in the engine cylinders.</p>
+                    <div class="price">₱ 299.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+                 <div class="preview" data-target="item20">
+                    <i class="fas fa-times"></i>
+                    <img src="images/item20.png" alt="Exhaust">
+                    <h3>Exhaust</h3>
+                    <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                       <span>( 8 Stock )</span>
+                    </div>
+                    <p>Directs exhaust gases away from the engine, reduces noise, and removes harmful emissions before releasing them into the atmosphere.</p>
+                    <div class="price">₱ 1,200.00</div>
+                    <div class="buttons">
+                        <a href="signup.html" class="buy">Buy Now</a>
+                        <a href="store.html" class="cart">Back</a>
+                    </div>
+                 </div>
+
+             </div>
+    </html>
+</body>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footbar">
+        <body>
+            <div class="foot">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100009570244787"></a><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/"></a><img width="50" height="50" src="https://img.icons8.com/glyph-neue/64/FFFFFF/tiktok-verified-account.png" alt="tiktok-verified-account"/>
+                    </li>
+                    <li></li>
+                </ul> 
+            </div>
+            <p>© Jade David Geraldo ©</p>
+        </body>
+    </div> 
+</footer>
+
+
+
+
+
+
+<script>
+function showSidebar(){
+    const sidebar= document.querySelector('.sidebar')
+    sidebar.style.display='flex'
+    const fronttext= document.querySelector('.fronttext')
+    fronttext.style.display ='none'
+}
+function hideSidebar(){
+    const sidebar= document.querySelector('.sidebar')
+    sidebar.style.display='none'
+    const fronttext= document.querySelector('.fronttext')
+    fronttext.style.display ='flex'
+}
+let preveiwContainer = document.querySelector('.products-preview');
+let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+document.querySelectorAll('.products-container .product').forEach(product =>{
+  product.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-times').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+});
+</script>

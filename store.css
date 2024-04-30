@@ -1,0 +1,324 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background-image: linear-gradient( rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Times New Roman';
+}
+nav{
+  background-color: rgb(47, 46, 46);
+  box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav li img{
+  height: 70%;
+  padding: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 70%;
+  margin-top: 5px;
+}
+nav li svg{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav li input{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 70%;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+nav a:hover{
+  background-color: #484646b9;
+}
+nav li:first-child{
+  margin-right: auto;
+  margin-left: 10%;
+}
+.content{
+  color: rgb(255, 255, 255);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.footbar{
+  width: 100%;
+  bottom: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(27, 27, 27, 0.859);
+  text-align: center;
+  position: fixed;
+}
+.footbar p{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  z-index: 999;
+  background-color: #2b2a2a92;
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+  text-align: center;
+}
+.sidebar li:nth-child(1){
+  margin-left: 0%;
+}
+.sidebar a{
+  width: 100%;
+  text-align: center;
+}
+@media(max-width: 600px){
+  nav .sidebar li{
+      font-size: larger;
+  }
+  nav li:nth-child(8){
+      display:flex;
+  }
+  nav li:nth-child(2){
+      display:none;
+  }
+  nav li:nth-child(3){
+      display:none;
+  }
+  nav li:nth-child(4){
+      display:none;
+  }
+  nav li:nth-child(5){
+      display:none;
+  }
+  nav .sidebar li:nth-child(2){
+      display:flex;
+  }
+  nav .sidebar li:nth-child(3){
+      display:flex;
+  }
+  nav .sidebar li:nth-child(4){
+      display:flex;
+  }
+  nav .sidebar li:nth-child(5){
+      display:flex;
+  }
+  .sidebar{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+  }
+  nav img{
+      width: 10%;
+      height: 15%;
+  }
+  nav input{
+      width: 10%;
+      height: 15%;
+  }
+}
+
+
+.slide * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .slide  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+    width: 100%;
+  }
+  
+  .slide  .container {
+    max-width: 1200px;
+    width: 95%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  
+  .slide .slider-wrapper {
+    position: relative;
+  }
+  
+  .slide .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slide .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  
+  .slide .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  
+  .slide .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  
+  .slide .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .slide .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slide .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .slide .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .slide .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  
+  .slide .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  
+  .slide .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  
+  .slide .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slide .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slide .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slide .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slide .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+  @media(max-width: 500px){
+      .slide .slider-wrapper .image-list .image-item{
+        width: 250px;
+        height: 350px;
+      }
+      .slide .container{
+        width: 380px;
+      }
+
+  }
